@@ -31,3 +31,8 @@ jobs:
           git add ./thumbnails || exit 0
           git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
           git push -f -q https://${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
+                  - name: Thumbnails Readme Action
+  # You may pin to the exact commit or the version.
+  # uses: KukovecRok/thumbnails-readme-action@d93d1044d663dcfd47ab5983122f9b36e0a96fd4
+  uses: KukovecRok/thumbnails-readme-action@v4.0
+          
